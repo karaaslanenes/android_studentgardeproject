@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/studentname_text_view"
+        android:layout_width="247dp"
+        android:layout_height="37dp"
+        android:text="@string/studentname_text_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <Button
+        android:id="@+id/display_button"
+        android:layout_width="187dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/display_button"
+        app:layout_constraintEnd_toEndOf="@+id/gradeaverage_text_view"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/gradeaverage_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/gradeaverage_text_view" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/previous_button"
+        app:layout_constraintTop_toBottomOf="@+id/display_button" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/previous_button"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_button" />
+
+    <TextView
+        android:id="@+id/gradeaverage_text_view"
+        android:layout_width="272dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/gradeaverage_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/studentname_text_view"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/studentname_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/studentname_text_view" />
+
+    <Button
+        android:id="@+id/gradedetails_button"
+        android:layout_width="296dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/gradedetails_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="@+id/previous_button"
+        app:layout_constraintTop_toBottomOf="@+id/next_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
